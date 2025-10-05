@@ -11,8 +11,8 @@ const ANIMATION_CONFIG = {
     openScale: 0.4,
     closedX: "0%",
     closedScale: 1,
-    duration: 0.8,
-    ease: "power3.out",
+    duration: 1,
+    ease: "expo.out",
   },
   logo: {
     initial: { opacity: 0, scale: 0.8, filter: "blur(2px)", x: 80 },
@@ -29,16 +29,16 @@ const ANIMATION_CONFIG = {
       scale: 1,
       rotation: 0,
       filter: "blur(0px)",
-      duration: 0.6,
-      ease: "power3.out",
+      duration: 0.8,
+      ease: "expo.out",
     },
     leave: {
       autoAlpha: 0,
       x: 60,
       scale: 0.9,
       filter: "blur(4px)",
-      duration: 0.3,
-      ease: "power2.in",
+      duration: 0.5,
+      ease: "expo.out",
     },
   },
   storeNames: {
@@ -49,24 +49,24 @@ const ANIMATION_CONFIG = {
       x: 0,
       scale: 1,
       filter: "blur(0px)",
-      duration: 0.55,
-      ease: "power3.out",
+      duration: 0.7,
+      ease: "expo.out",
     },
     leave: {
       autoAlpha: 0,
       x: -60,
       scale: 0.9,
       filter: "blur(4px)",
-      duration: 0.3,
-      ease: "power2.in",
+      duration: 0.5,
+      ease: "expo.out",
     },
   },
   item: {
     hoverX: 32,
     hoverOpacity: 1,
     normalOpacity: 0.6,
-    duration: 0.4,
-    ease: "power3.out",
+    duration: 0.5,
+    ease: "expo.out",
     highlightScale: 1.2,
     fadeScale: 0.9,
     fadeOpacity: 0.3,
@@ -115,7 +115,7 @@ export function Countries() {
           : ANIMATION_CONFIG.item.fadeOpacity,
         fontWeight: isSelected ? "bold" : "normal",
         duration: ANIMATION_CONFIG.item.duration,
-        ease: isSelected ? "back.out(1.7)" : "power2.out",
+        ease: isSelected ? "back.out(1.7)" : "expo.out",
       });
     });
   }, []);
@@ -143,7 +143,7 @@ export function Countries() {
       opacity: ANIMATION_CONFIG.item.normalOpacity,
       fontWeight: "normal",
       duration: 0.5,
-      ease: "power2.out",
+      ease: "expo.out",
       stagger: 0.04,
     });
   }, []);
@@ -232,7 +232,7 @@ export function Countries() {
         x: 0,
         opacity: ANIMATION_CONFIG.item.normalOpacity,
         duration: ANIMATION_CONFIG.item.duration,
-        ease: "power3.inOut",
+        ease: "expo.inOut",
       });
       animateSidePanels(false);
     },
@@ -259,17 +259,17 @@ export function Countries() {
                 {hoveredCountry &&
                   !isDetailsOpen &&
                   hoveredCountry.details?.companies && (
-                    <ul className="space-y-1 text-center">
+                    <ul className="space-y-2 text-center">
                       {hoveredCountry.details.companies.slice(0, 5).map((c) => (
                         <li key={c.name}>
-                          <span className="text-xs md:text-lg lg:text-2xl font-semibold leading-none opacity-80">
+                          <span className="text-sm md:text-xl lg:text-3xl font-semibold leading-tight opacity-90 font-sans">
                             {c.name}
                           </span>
                         </li>
                       ))}
                       {hoveredCountry.details.companies.length > 5 && (
                         <li>
-                          <span className="text-xs md:text-lg lg:text-2xl font-semibold leading-none opacity-80">
+                          <span className="text-sm md:text-xl lg:text-3xl font-bold leading-tight opacity-90 font-sans">
                             & {hoveredCountry.details.companies.length - 5} more
                           </span>
                         </li>
