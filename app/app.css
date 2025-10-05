@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+.hero__title {
+  @apply text-3xl md:text-5xl lg:text-7xl font-medium text-center;
+  text-shadow:
+    0 1px 4px #ffd700,
+    0 0px 1px #ffd700;
+}
