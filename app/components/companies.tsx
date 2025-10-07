@@ -4,6 +4,8 @@ import type { Country } from "~/models/country";
 import ScrollLogos from "~/components/store-logos";
 import CompanyLogos from "../constant/companies-logos";
 import type { Company, CountryCompanies } from "~/models/company";
+import RadialStats from "./radial";
+import StoreTable from "./store-table";
 
 interface CompanyDetailsProps {
   country: Country;
@@ -236,7 +238,7 @@ export function CompanyDetails({ country, onClose }: CompanyDetailsProps) {
           scrollbarColor: "#a8a29e #f5f5f4",
         }}
       >
-        <div className="sticky top-0 z-40 bg-white/80 backdrop-blur-lg border-b border-stone-200">
+        {/* <div className="sticky top-0 z-40 bg-white/80 backdrop-blur-lg border-b border-stone-200">
           <div className="px-12 py-8">
             <div className="flex items-center gap-6">
               <div className="w-20 h-14 flex items-center justify-center">
@@ -252,7 +254,7 @@ export function CompanyDetails({ country, onClose }: CompanyDetailsProps) {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
         <div
           ref={topLogosRef}
@@ -803,7 +805,13 @@ export function CompanyDetails({ country, onClose }: CompanyDetailsProps) {
           </div>
         </div>
 
-        <div className="h-16"></div>
+        <div className="bg-white">
+          <StoreTable />
+          <RadialStats />
+        </div>
+
+
+        {/* <div className="h-16"></div> */}
       </div>
     </div>
   );
