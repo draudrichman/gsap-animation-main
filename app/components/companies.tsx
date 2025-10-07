@@ -259,7 +259,7 @@ export function CompanyDetails({ country, onClose }: CompanyDetailsProps) {
 
         <div
           ref={topLogosRef}
-          className="px-12 py-8 bg-gradient-to-br from-stone-50 to-white"
+          className="px-12 pt-8 bg-gradient-to-br from-stone-50 to-white"
         >
           {countryCompanies.length > 0 && (
             <ScrollLogos companies={countryCompanies} />
@@ -465,7 +465,7 @@ const China = ({ companyDetailsRef, statsRef }: { companyDetailsRef: RefObject<H
 
       <div
         ref={statsRef}
-        className="px-12 py-10 bg-gradient-to-br from-slate-50 to-white"
+        className="px-12 pb-10 bg-gradient-to-br from-slate-50 to-white"
       >
         <h1 className="text-3xl font-bold text-stone-900 mb-8 text-center">
           市场表现对比

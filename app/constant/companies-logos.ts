@@ -29,7 +29,7 @@ import riteAid from "~/assets/logos/us/rite-aid.jpeg";
 import walgreens from "~/assets/logos/us/walgreens.jpeg";
 import sams from "~/assets/logos/china/sams.png";
 import aldi from "~/assets/logos/china/aldi.png";
-import chcostco from "~/assets/logos/china/costco.jpeg";
+import chcostco from "~/assets/logos/china/costcobg.png";
 
 import type { CountryCompanies } from "~/models/company";
 
@@ -78,12 +78,12 @@ const LOGOS: CountryCompanies[] = [
         src: sams,
       },
       {
-        name: `Aldi`,
-        src: aldi,
-      },
-      {
         name: `Costco`,
         src: chcostco,
+      },
+      {
+        name: `Aldi`,
+        src: aldi,
       },
     ],
   },
