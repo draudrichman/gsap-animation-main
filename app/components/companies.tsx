@@ -476,134 +476,38 @@ const China = ({ companyDetailsRef, statsRef }: { companyDetailsRef: RefObject<H
             <table className="w-full">
               <thead>
                 <tr className="bg-gradient-to-r from-slate-100 to-stone-100 border-b border-stone-200">
-                  <th className="text-left py-4 px-6 text-stone-900 font-semibold">
-                    Company
-                  </th>
-                  <th className="text-left py-4 px-6 text-stone-900 font-semibold">
-                    Market Cap
-                  </th>
-                  <th className="text-left py-4 px-6 text-stone-900 font-semibold">
-                    Revenue
-                  </th>
-                  <th className="text-left py-4 px-6 text-stone-900 font-semibold">
-                    Growth Rate
-                  </th>
-                  <th className="text-left py-4 px-6 text-stone-900 font-semibold">
-                    Employees
-                  </th>
+                  <th className="text-left py-4 px-6 text-stone-900 font-semibold">品牌</th>
+                  <th className="text-left py-4 px-6 text-stone-900 font-semibold">年销售额（人民币）</th>
+                  <th className="text-left py-4 px-6 text-stone-900 font-semibold">门店数量</th>
+                  <th className="text-left py-4 px-6 text-stone-900 font-semibold">会员规模</th>
+                  <th className="text-left py-4 px-6 text-stone-900 font-semibold">线上占比</th>
                 </tr>
               </thead>
               <tbody>
                 <tr className="border-b border-stone-100 hover:bg-blue-50/30 transition-colors">
-                  <td className="py-4 px-6 text-stone-800 font-medium">
-                    Apple Inc.
-                  </td>
-                  <td className="py-4 px-6 text-stone-600">$2.8T</td>
-                  <td className="py-4 px-6 text-stone-600">$394.3B</td>
-                  <td className="py-4 px-6"><span className="inline-flex items-center px-2.5 py-1 rounded-full text-sm font-medium bg-green-100 text-green-700">+8.2%</span></td>
-                  <td className="py-4 px-6 text-stone-600">164,000</td>
+                  <td className="py-4 px-6 text-stone-800 font-medium">山姆会员店</td>
+                  <td className="py-4 px-6 text-stone-600">1000亿+</td>
+                  <td className="py-4 px-6 text-stone-600">54</td>
+                  <td className="py-4 px-6 text-stone-600">近900万</td>
+                  <td className="py-4 px-6 text-stone-600">&gt;50%</td>
                 </tr>
                 <tr className="border-b border-stone-100 hover:bg-blue-50/30 transition-colors">
-                  <td className="py-4 px-6 text-stone-800 font-medium">
-                    Microsoft Corp.
-                  </td>
-                  <td className="py-4 px-6 text-stone-600">$2.5T</td>
-                  <td className="py-4 px-6 text-stone-600">$211.9B</td>
-                  <td className="py-4 px-6"><span className="inline-flex items-center px-2.5 py-1 rounded-full text-sm font-medium bg-green-100 text-green-700">+12.1%</span></td>
-                  <td className="py-4 px-6 text-stone-600">221,000</td>
+                  <td className="py-4 px-6 text-stone-800 font-medium">开市客</td>
+                  <td className="py-4 px-6 text-stone-600">87亿+</td>
+                  <td className="py-4 px-6 text-stone-600">7</td>
+                  <td className="py-4 px-6 text-stone-600">未公开（全球8100万）</td>
+                  <td className="py-4 px-6 text-stone-600"></td>
                 </tr>
                 <tr className="border-b border-stone-100 hover:bg-blue-50/30 transition-colors">
-                  <td className="py-4 px-6 text-stone-800 font-medium">
-                    Alphabet Inc.
-                  </td>
-                  <td className="py-4 px-6 text-stone-600">$1.7T</td>
-                  <td className="py-4 px-6 text-stone-600">$307.4B</td>
-                  <td className="py-4 px-6"><span className="inline-flex items-center px-2.5 py-1 rounded-full text-sm font-medium bg-green-100 text-green-700">+9.8%</span></td>
-                  <td className="py-4 px-6 text-stone-600">182,000</td>
-                </tr>
-                <tr className="border-b border-stone-100 hover:bg-blue-50/30 transition-colors">
-                  <td className="py-4 px-6 text-stone-800 font-medium">
-                    Amazon.com Inc.
-                  </td>
-                  <td className="py-4 px-6 text-stone-600">$1.4T</td>
-                  <td className="py-4 px-6 text-stone-600">$574.8B</td>
-                  <td className="py-4 px-6"><span className="inline-flex items-center px-2.5 py-1 rounded-full text-sm font-medium bg-green-100 text-green-700">+15.3%</span></td>
-                  <td className="py-4 px-6 text-stone-600">1,540,000</td>
-                </tr>
-                <tr className="border-b border-stone-100 hover:bg-blue-50/30 transition-colors">
-                  <td className="py-4 px-6 text-stone-800 font-medium">
-                    Tesla Inc.
-                  </td>
-                  <td className="py-4 px-6 text-stone-600">$789B</td>
-                  <td className="py-4 px-6 text-stone-600">$96.8B</td>
-                  <td className="py-4 px-6"><span className="inline-flex items-center px-2.5 py-1 rounded-full text-sm font-medium bg-green-100 text-green-700">+18.9%</span></td>
-                  <td className="py-4 px-6 text-stone-600">127,855</td>
-                </tr>
-                <tr className="border-b border-stone-100 hover:bg-blue-50/30 transition-colors">
-                  <td className="py-4 px-6 text-stone-800 font-medium">
-                    Meta Platforms
-                  </td>
-                  <td className="py-4 px-6 text-stone-600">$845B</td>
-                  <td className="py-4 px-6 text-stone-600">$134.9B</td>
-                  <td className="py-4 px-6"><span className="inline-flex items-center px-2.5 py-1 rounded-full text-sm font-medium bg-green-100 text-green-700">+22.7%</span></td>
-                  <td className="py-4 px-6 text-stone-600">77,805</td>
-                </tr>
-                <tr className="border-b border-stone-100 hover:bg-blue-50/30 transition-colors">
-                  <td className="py-4 px-6 text-stone-800 font-medium">
-                    NVIDIA Corp.
-                  </td>
-                  <td className="py-4 px-6 text-stone-600">$1.8T</td>
-                  <td className="py-4 px-6 text-stone-600">$79.8B</td>
-                  <td className="py-4 px-6"><span className="inline-flex items-center px-2.5 py-1 rounded-full text-sm font-medium bg-green-100 text-green-700">+126.0%</span></td>
-                  <td className="py-4 px-6 text-stone-600">26,196</td>
-                </tr>
-                <tr className="border-b border-stone-100 hover:bg-blue-50/30 transition-colors">
-                  <td className="py-4 px-6 text-stone-800 font-medium">
-                    Netflix Inc.
-                  </td>
-                  <td className="py-4 px-6 text-stone-600">$195B</td>
-                  <td className="py-4 px-6 text-stone-600">$33.7B</td>
-                  <td className="py-4 px-6"><span className="inline-flex items-center px-2.5 py-1 rounded-full text-sm font-medium bg-green-100 text-green-700">+6.7%</span></td>
-                  <td className="py-4 px-6 text-stone-600">13,000</td>
-                </tr>
-                <tr className="border-b border-stone-100 hover:bg-blue-50/30 transition-colors">
-                  <td className="py-4 px-6 text-stone-800 font-medium">
-                    Adobe Inc.
-                  </td>
-                  <td className="py-4 px-6 text-stone-600">$234B</td>
-                  <td className="py-4 px-6 text-stone-600">$19.4B</td>
-                  <td className="py-4 px-6"><span className="inline-flex items-center px-2.5 py-1 rounded-full text-sm font-medium bg-green-100 text-green-700">+11.2%</span></td>
-                  <td className="py-4 px-6 text-stone-600">28,775</td>
-                </tr>
-                <tr className="border-b border-stone-100 hover:bg-blue-50/30 transition-colors">
-                  <td className="py-4 px-6 text-stone-800 font-medium">
-                    Salesforce Inc.
-                  </td>
-                  <td className="py-4 px-6 text-stone-600">$267B</td>
-                  <td className="py-4 px-6 text-stone-600">$34.9B</td>
-                  <td className="py-4 px-6"><span className="inline-flex items-center px-2.5 py-1 rounded-full text-sm font-medium bg-green-100 text-green-700">+10.9%</span></td>
-                  <td className="py-4 px-6 text-stone-600">79,390</td>
-                </tr>
-                <tr className="border-b border-stone-100 hover:bg-blue-50/30 transition-colors">
-                  <td className="py-4 px-6 text-stone-800 font-medium">
-                    Oracle Corp.
-                  </td>
-                  <td className="py-4 px-6 text-stone-600">$368B</td>
-                  <td className="py-4 px-6 text-stone-600">$50.0B</td>
-                  <td className="py-4 px-6"><span className="inline-flex items-center px-2.5 py-1 rounded-full text-sm font-medium bg-green-100 text-green-700">+4.8%</span></td>
-                  <td className="py-4 px-6 text-stone-600">143,000</td>
-                </tr>
-                <tr className="hover:bg-blue-50/30 transition-colors">
-                  <td className="py-4 px-6 text-stone-800 font-medium">
-                    PayPal Holdings
-                  </td>
-                  <td className="py-4 px-6 text-stone-600">$67B</td>
-                  <td className="py-4 px-6 text-stone-600">$29.8B</td>
-                  <td className="py-4 px-6"><span className="inline-flex items-center px-2.5 py-1 rounded-full text-sm font-medium bg-red-100 text-red-700">-2.1%</span></td>
-                  <td className="py-4 px-6 text-stone-600">30,900</td>
+                  <td className="py-4 px-6 text-stone-800 font-medium">奥乐齐</td>
+                  <td className="py-4 px-6 text-stone-600">20亿+</td>
+                  <td className="py-4 px-6 text-stone-600">78</td>
+                  <td className="py-4 px-6 text-stone-600">未公开</td>
+                  <td className="py-4 px-6 text-stone-600"></td>
                 </tr>
               </tbody>
             </table>
+
           </div>
         </div>
       </div>
