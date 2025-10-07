@@ -2,6 +2,7 @@ import { Countries } from "~/components";
 import type { Route } from "./+types/home";
 import { Hero } from "~/components/hero/hero";
 import RadialStats from "~/components/radial";
+import CardAnimation from "~/components/card-animation";
 
 export function meta({ }: Route.MetaArgs) {
   return [
@@ -13,9 +14,9 @@ export function meta({ }: Route.MetaArgs) {
 export default function Home() {
   return (
     <>
-      {/* <Hero /> */}
+      <Hero />
+      <CardAnimation />
       <Countries />
-      {/* <RadialStats /> */}
     </>
   );
 }
