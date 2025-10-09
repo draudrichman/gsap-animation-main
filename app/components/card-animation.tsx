@@ -197,7 +197,7 @@ const ScrollCards: React.FC = () => {
                                             {slide.title}
                                         </h1>
                                         <h2 className="text-[clamp(1rem,3vw,2rem)] leading-tight">
-                                            {'& ' + slide.titleEn.split('&')[0].trim()}
+                                            {'' + slide.titleEn.split('&')[0].trim()}
                                         </h2>
                                         {slide.titleEn.includes('&') && (
                                             <h2 className="text-[clamp(1rem,3vw,2rem)] leading-tight">
@@ -225,7 +225,6 @@ const ScrollCards: React.FC = () => {
                     ))}
                 </div>
             </section>
-            <div className="h-screen" />
         </>
     );
 };
