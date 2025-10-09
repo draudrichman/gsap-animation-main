@@ -32,7 +32,7 @@ const slides: Slide[] = [
                 description: '评估最佳入场模式（经销、代销、直供），规划产品组合、包装规格与价格体系，满足渠道方采购需求。'
             }
         ],
-        bgColor: 'bg-[#a2d2ff]'
+        bgColor: 'bg-[#222831] text-[#EEEEEE]'
     },
     {
         number: '02',
@@ -52,7 +52,7 @@ const slides: Slide[] = [
                 description: '根据市场反馈优化供应链与物流方案，提升效率并降低成本。'
             }
         ],
-        bgColor: 'bg-[#bde0fe]'
+        bgColor: 'bg-[#27374D] text-[#EEEEEE]'
     },
     {
         number: '03',
@@ -72,7 +72,7 @@ const slides: Slide[] = [
                 description: '获取商超的试销订单（First Order）。'
             }
         ],
-        bgColor: 'bg-[#ffafcc]'
+        bgColor: 'bg-[#526D82] text-[#EEEEEE]'
     },
     {
         number: '04',
@@ -92,7 +92,7 @@ const slides: Slide[] = [
                 description: '根据试销反馈推动品牌方调整产品及生产。'
             }
         ],
-        bgColor: 'bg-[#ffc8dd]'
+        bgColor: 'bg-[#9DB2BF] text-[#27374D]'
     },
     {
         number: '05',
@@ -112,7 +112,7 @@ const slides: Slide[] = [
                 description: '推动品牌价值增长·实现长期盈利目标。'
             }
         ],
-        bgColor: 'bg-[#cdb4db]'
+        bgColor: 'bg-[#DDE6ED] text-[#27374D]'
     }
 ];
 
@@ -174,11 +174,11 @@ const ScrollCards: React.FC = () => {
                             key={index}
                             ref={el => { wrapperRefs.current[index] = el; }}
                             style={{ perspective: '800px' }}
-                            className="relative"
+                            className="relative bg-black"
                         >
                             <div
                                 ref={el => { slideRefs.current[index] = el; }}
-                                className={`${slide.bgColor} text-gray-900 px-4 py-12 min-h-screen xl:h-[calc(100vh-80px)]`}
+                                className={`${slide.bgColor} px-4 py-12 min-h-screen xl:h-[calc(100vh-80px)]`}
                                 style={{ transformStyle: 'preserve-3d' }}
                             >
                                 <div className="relative max-w-7xl mx-auto h-full flex flex-col justify-center">

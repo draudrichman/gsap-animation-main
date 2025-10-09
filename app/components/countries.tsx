@@ -243,7 +243,7 @@ export function Countries() {
     <>
       <section
         ref={sectionRef}
-        className="bg-white flex items-center justify-center h-screen relative overflow-hidden"
+        className="bg-[#DDE6ED] flex items-center justify-center h-screen relative overflow-hidden"
       >
         <div
           ref={containerRef}
