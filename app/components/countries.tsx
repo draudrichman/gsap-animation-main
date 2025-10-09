@@ -243,7 +243,7 @@ export function Countries() {
     <>
       <section
         ref={sectionRef}
-        className="bg-[#DDE6ED] flex items-center justify-center h-screen relative overflow-hidden"
+        className="bg-animated-gradient flex items-center justify-center h-screen relative overflow-hidden"
       >
         <div
           ref={containerRef}
@@ -262,14 +262,14 @@ export function Countries() {
                     <ul className="space-y-2 text-center">
                       {hoveredCountry.details.companies.slice(0, 5).map((c) => (
                         <li key={c.name}>
-                          <span className="text-sm md:text-xl lg:text-3xl font-semibold leading-tight opacity-90 font-sans">
+                          <span className="text-sm md:text-xl lg:text-3xl text-white font-semibold leading-tight opacity-90 font-sans">
                             {c.name}
                           </span>
                         </li>
                       ))}
                       {hoveredCountry.details.companies.length > 5 && (
                         <li>
-                          <span className="text-sm md:text-xl lg:text-3xl font-bold leading-tight opacity-90 font-sans">
+                          <span className="text-sm md:text-xl lg:text-3xl text-white font-semibold leading-tight opacity-90 font-sans">
                             & {hoveredCountry.details.companies.length - 5} more
                           </span>
                         </li>
@@ -305,7 +305,7 @@ export function Countries() {
               {countries.map((country) => (
                 <li
                   key={country.name}
-                  className="group text-center p-2 md:p-4 rounded-lg text-[#201a39] cursor-pointer opacity-60"
+                  className="group text-center p-2 md:p-4 rounded-lg text-transparent bg-clip-text bg-gradient-to-r from-gray-400 to-white cursor-pointer opacity-60"
                   onClick={() => handleCountryClick(country)}
                   onMouseEnter={(e) =>
                     handleCountryHover(country, e.currentTarget)

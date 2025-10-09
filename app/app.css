@@ -6,3 +6,24 @@
     0 1px 4px #ffd700,
     0 0px 1px #ffd700;
 }
+
+
+.bg-animated-gradient {
+  background: linear-gradient(-45deg, #080808, #baa18b, #080808, #cccccc);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+}
+
+/* Define the keyframes for the animation */
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
